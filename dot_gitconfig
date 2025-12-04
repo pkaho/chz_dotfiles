@@ -1,0 +1,6 @@
+[user]
+name = pkaho
+email = pkaho@qq.com
+
+[credential]
+helper = store
