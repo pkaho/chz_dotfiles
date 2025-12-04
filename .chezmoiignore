@@ -1,0 +1,5 @@
+# 非 Windows 系统忽略内容
+{{- if ne .chezmoi.os "windows" }}
+Documents/PowerShell/
+.wslconfig
+{{- end }}
