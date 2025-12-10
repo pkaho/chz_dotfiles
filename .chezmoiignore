@@ -1,5 +1,12 @@
-# 非 Windows 系统忽略内容
+# Linux 和 MacOS 需要忽略的内容
 {{- if ne .chezmoi.os "windows" }}
 Documents/PowerShell/
+AppData/
 .wslconfig
+{{- end }}
+
+# Windows 需要忽略的内容
+{{- if eq .chezmoi.os "windows"}}
+.config/pip
+.config/alacritty
 {{- end }}
