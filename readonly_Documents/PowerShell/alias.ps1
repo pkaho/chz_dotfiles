@@ -31,6 +31,13 @@ function ..    { cd .. }
 function ...   { cd ../.. }
 function ....  { cd ../../.. }
 
+# chezmoi
+function ccd  { chezmoi cd }
+function cap  { chezmoi apply -v }
+function cdf  { chezmoi diff }
+function cmg  { chezmoi merge @args }
+function cmga { chezmoi merge-all }
+
 function open {
     param([string]$path = $null)
 
