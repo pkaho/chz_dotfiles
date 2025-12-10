@@ -1,0 +1,1 @@
+{{- template "zed/snippets/python.json" }}
