@@ -1,0 +1,14 @@
+[palettes.home_and_country] # https://colorleap.app/time/1910
+color_bg_os   = '#4A564C'
+color_bg_path = '#C19E5C'
+color_bg_git  = '#7C531A'
+color_bg_lang = '#7C3314'
+color_bg_env  = '#572D14'
+color_bg_time = '#2f3a46'
+
+color_fg_os   = '#fbf1c7'
+color_fg_path = '#040e38'
+color_fg_git  = '#fbf1c7'
+color_fg_lang = '#fbf1c7'
+color_fg_env  = '#fbf1c7'
+color_fg_time = '#fbf1c7'

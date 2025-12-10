@@ -1,0 +1,14 @@
+[palettes.heavenly_hues_18] # https://www.design-seeds.com/2024/04/heavenly-hues_18.html
+color_bg_os   = '#37596E'
+color_bg_path = '#2B4D6B'
+color_bg_git  = '#1D3052'
+color_bg_lang = '#1B1E3E'
+color_bg_env  = '#E3C170'
+color_bg_time = '#FAD493'
+
+color_fg_os   = '#fbf1c7'
+color_fg_path = '#fbf1c7'
+color_fg_git  = '#fbf1c7'
+color_fg_lang = '#fbf1c7'
+color_fg_env  = '#040e38'
+color_fg_time = '#040e38'
