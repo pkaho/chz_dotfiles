@@ -28,7 +28,8 @@ local keys = require("utils.keys")
 return function(config)
     config.leader = { key = ",", mods = "ALT", timeout_milliseconds = 3000 }
     config.keys = keys.mappings({
-        -- debug
+        -- 杂项
+        ["F3"] = act.ShowLauncher,
         ["F12"] = act.ShowDebugOverlay,
 
         -- 调整窗口
@@ -75,7 +76,7 @@ return function(config)
         ["alt+p"] = act.PaneSelect({ alphabet = "123456789", mode = "Activate" }),
 
         -- 将选择的窗格移动到当前激活的窗格
-        ["ctrl+shift+p"] = act.PaneSelect({ alphabet = "123456789", mode = "SwapWithActive" }),
+        ["ctrl+alt+p"] = act.PaneSelect({ alphabet = "123456789", mode = "SwapWithActive" }),
 
         -- 分割窗格
         ["alt+\\"] = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
