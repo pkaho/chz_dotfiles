@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+local colors = require("configs.colors")
 
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
     local title = tab.active_pane.title:gsub("%.exe$", "")
@@ -12,10 +13,9 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
         end
     end
 
-    local fg_color = tab.is_active and "#58b879" or "#808080"
-    -- local bg_color = "#000000"
-    local bg_color = "#181826"
-    local on_color = "#fffacd"
+    local fg_color = tab.is_active and colors.active_title_fg or colors.inactive_title_fg
+    local bg_color = colors.title_bg
+    local on_color = colors.unseen
     local zoom_indicator = tab.active_pane.is_zoomed and " 󰬡 " or " "
     local unseen_indicator = has_unseen and " ●" or " "
 
