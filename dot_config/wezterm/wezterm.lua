@@ -1,24 +1,20 @@
 local wezterm = require("wezterm")
-local platform = require("utils.platform")
+local C = require("configs.colors")
 
 local config = wezterm.config_builder()
 
 config = {
-    default_prog = platform.shell(),
-    color_scheme = "Catppuccin Mocha",
-    colors = {
-        scrollbar_thumb = "#808080",
-    },
+    color_scheme = "Catppuccin Mocha", -- Mocha Macchiato Frappe Latte
 
     -- 字体
     -- stylua: ignore start
     font = wezterm.font_with_fallback({
         -- en
-        { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 },
+        { family = "Iosevka Nerd Font Mono",       scale = 1.1 },
         { family = "TX-02",                        scale = 1.0 },
         { family = "FiraCode Nerd Font Mono",      scale = 1.0 },
+        { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 },
         { family = "Maple Mono NF",                scale = 1.0 },
-        { family = "Iosevka Nerd Font Mono",       scale = 1.05 },
         -- cn
         { family = "LXGW Neo XiHei",               scale = 1.0 },
         { family = "Maple Mono NF CN",             scale = 1.0 },
@@ -31,15 +27,6 @@ config = {
     use_fancy_tab_bar = true,
     show_new_tab_button_in_tab_bar = false,
     -- show_close_tab_button_in_tabs = false
-    window_frame = {
-        font = wezterm.font({
-            family = "TX-02",
-            weight = "Bold",
-        }),
-        font_size = 11,
-        active_titlebar_bg = "#181826",
-        inactive_titlebar_bg = "#181826",
-    },
 
     -- performance
     max_fps = 60,
@@ -76,6 +63,8 @@ config = {
     },
 }
 
+C.setup_header_popups(config)
+require("configs.domains")(config)
 require("configs.keybinds")(config)
 require("configs.mouse")(config)
 require("configs.rules")(config)
