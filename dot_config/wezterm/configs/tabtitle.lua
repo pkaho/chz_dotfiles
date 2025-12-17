@@ -13,6 +13,7 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
         end
     end
 
+    local frame_bg = colors.frame_bg
     local fg_color = tab.is_active and colors.active_title_fg or colors.inactive_title_fg
     local bg_color = colors.title_bg
     local on_color = colors.unseen
@@ -20,10 +21,10 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
     local unseen_indicator = has_unseen and " ●" or " "
 
     local elements = {
-        { fg = fg_color, bg = bg_color, text = "" },
+        { fg = fg_color, bg = frame_bg, text = "" },
         { fg = bg_color, bg = fg_color, text = zoom_indicator .. title },
         { fg = on_color, bg = fg_color, text = unseen_indicator },
-        { fg = fg_color, bg = bg_color, text = "" },
+        { fg = fg_color, bg = frame_bg, text = "" },
     }
 
     local cells = {}

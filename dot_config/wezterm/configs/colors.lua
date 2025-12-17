@@ -2,10 +2,13 @@ local wezterm = require("wezterm")
 
 local M = {
     -- title
-    active_title_fg   = "#ffb400",
-    inactive_title_fg = "#8c7b52",
-    title_bg          = "#000005",
-    unseen            = "#7a4b00",
+    active_title_fg   = "#4d1431",
+    inactive_title_fg = "#806263",
+    title_bg          = "#fff6e0",
+    unseen            = "#ffbe00",
+
+    -- title bar 背景
+    frame_bg          = "#000000",
 
     -- popups
     popups_bg         = "#fff6e0",
@@ -19,8 +22,8 @@ function M.setup_header_popups(config)
             weight = "Bold",
         }),
         font_size = 11,
-        active_titlebar_bg = M.title_bg,
-        inactive_titlebar_bg = M.title_bg,
+        active_titlebar_bg = M.frame_bg,
+        inactive_titlebar_bg = M.frame_bg,
     }
     config.command_palette_bg_color = M.popups_bg
     config.command_palette_fg_color = M.popups_fg
