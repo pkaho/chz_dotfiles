@@ -6,16 +6,16 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-f5": ["task::Spawn", { "task_name": "r/python" }]
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-f5": ["task::Spawn", { "task_name": "r/python" }]
+        }
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            "j k": "vim::NormalBefore"
+        }
     }
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "j k": "vim::NormalBefore"
-    }
-  }
 ]
