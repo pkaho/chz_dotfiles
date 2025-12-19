@@ -38,6 +38,8 @@ function cdf  { chezmoi diff }
 function cmg  { chezmoi merge @args }
 function cmga { chezmoi merge-all }
 
+function gitc { git clone https://github.com/$args }
+
 function open {
     param([string]$path = $null)
 
