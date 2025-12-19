@@ -1,15 +1,15 @@
 # ╭───────────────────────────────────────────────────────────╮
 # │ 脚本导入                                                  │
 # ╰───────────────────────────────────────────────────────────╯
-
 # 使用 `.` 保持脚本变量在当前会话中
 . "$PSScriptRoot/alias.ps1"
 . "$PSScriptRoot/scoop.ps1"
+. "$PSScriptRoot/starship.ps1"
+
 
 # ╭───────────────────────────────────────────────────────────╮
 # │ 按键映射配置                                              │
 # ╰───────────────────────────────────────────────────────────╯
-
 # 设置编辑模式为 Emacs 风格
 Set-PSReadLineOption -EditMode Emacs
 
@@ -27,17 +27,13 @@ Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key UpArrow   -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 
+
 # ╭───────────────────────────────────────────────────────────╮
-# │ 第三方工具初始化                                          │
+# │ 第三方工具配置                                            │
 # ╰───────────────────────────────────────────────────────────╯
-
-# Starship 提示符配置
-function Invoke-Starship-TransientFunction {
-    &starship module character
-}
-
+# 设置 WezTerm OSC7 集成，新窗格同步路径
+# refer: https://wezterm.org/shell-integration.html#osc-7-on-windows-with-powershell-with-starship
 function Invoke-Starship-PreCommand {
-    # 设置 WezTerm OSC7 集成，新窗格同步路径
     $current_location = $executionContext.SessionState.Path.CurrentLocation
     if ($current_location.Provider.Name -eq "FileSystem") {
         $ansi_escape = [char]27
@@ -46,10 +42,6 @@ function Invoke-Starship-PreCommand {
         $host.ui.Write($osc7_code)
     }
 }
-
-# 初始化 Starship
-Invoke-Expression (&starship init powershell)
-Enable-TransientPrompt
 
 # 初始化 Zoxide (智能目录跳转)
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
