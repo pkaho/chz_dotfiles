@@ -4,7 +4,7 @@ function Set-StarshipShellLevel {
     $env:__ShellDepth = [int] $env:__ShellDepth + 1
 
     $depthIcons = @(
-        "", "", "󱂉 ", "󱂊 ", "󱂋 ", " "
+        "", "", "󱂉", "󱂊", "󱂋", ""
     )
 
     if ($env:__ShellDepth -ge $depthIcons.Count) {
