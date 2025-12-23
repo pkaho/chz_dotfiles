@@ -4,13 +4,15 @@ local C = require("configs.colors")
 local config = wezterm.config_builder()
 
 config = {
-    color_scheme = "Catppuccin Mocha", -- Mocha Macchiato Frappe Latte
+    color_scheme = "Dracula", -- Dracula, Catppuccin: Mocha Macchiato Frappe Latte
 
     -- 字体
     -- stylua: ignore start
     font = wezterm.font_with_fallback({
         -- en
         { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 },
+        { family = "FiraCode Nerd Font Mono",      scale = 1.0 },
+        { family = "Maple Mono NF",                scale = 1.0 },
         { family = "Iosevka Nerd Font Mono",       scale = 1.1 },
         { family = "TX-02",                        scale = 1.0 },
         { family = "FiraCode Nerd Font Mono",      scale = 1.0 },
@@ -68,6 +70,7 @@ require("configs.domains")(config)
 require("configs.keybinds")(config)
 require("configs.mouse")(config)
 require("configs.rules")(config)
-require("configs.tabtitle")
+require("utils.startup")
+require("utils.tabtitle")
 
 return config
