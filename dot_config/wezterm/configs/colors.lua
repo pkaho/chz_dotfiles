@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local M = {
     -- title
-    active_title_fg   = "#4d1400",
+    active_title_fg   = "#52145f",
     inactive_title_fg = "#806263",
     title_bg          = "#fff6e0",
     unseen            = "#ffbe00",
