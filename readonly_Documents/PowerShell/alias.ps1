@@ -9,8 +9,8 @@ function nm     { nvim -u ~/AppData/Local/nvim/minimal.lua @args }
 function crb    { Clear-RecycleBin -Force }
 function rm     { Remove-Item -Force -Recurse -Path @args }
 function imgcat { wezterm imgcat @args }
-function labelme  { uvx labelme @args }
-function labelimg { uvx --from labelimg labelImg.exe @args }
+function labelme  { uvx labelme @args }                      # uv tool install -w onnxruntime==1.20.1 labelme
+function labelimg { uvx --from labelimg labelImg.exe @args } # uv tool install -w setuptools labelimg
 
 # eza
 Remove-Item alias:ls -Force
