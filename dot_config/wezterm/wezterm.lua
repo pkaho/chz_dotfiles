@@ -10,13 +10,11 @@ config = {
     -- stylua: ignore start
     font = wezterm.font_with_fallback({
         -- en
+        { family = "Maple Mono NF",                scale = 1.0 },
         { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 },
         { family = "FiraCode Nerd Font Mono",      scale = 1.0 },
-        { family = "Maple Mono NF",                scale = 1.0 },
         { family = "Iosevka Nerd Font Mono",       scale = 1.1 },
         { family = "TX-02",                        scale = 1.0 },
-        { family = "FiraCode Nerd Font Mono",      scale = 1.0 },
-        { family = "Maple Mono NF",                scale = 1.0 },
         -- cn
         { family = "LXGW Neo XiHei",               scale = 1.0 },
         { family = "Maple Mono NF CN",             scale = 1.0 },
