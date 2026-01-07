@@ -69,7 +69,6 @@ require("configs.mouse")(config)
 require("configs.rules")(config)
 require("utils.startup")
 require("utils.tabtitle")
-
 require("override")(config)
 
 return config
