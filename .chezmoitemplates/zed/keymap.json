@@ -13,9 +13,33 @@
         }
     },
     {
+        "context": "Workspace && !Editor",
+        "bindings": {
+            "space e": "workspace::ToggleLeftDock",
+        },
+    },
+    {
         "context": "Editor && vim_mode == insert",
         "bindings": {
-            "j k": "vim::NormalBefore"
-        }
+            "j k": "vim::NormalBefore",
+        },
+    },
+    {
+        "context": "VimControl && !menu",
+        "bindings": {
+            "shift-h": "pane::ActivatePreviousItem",
+            "shift-l": "pane::ActivateNextItem",
+            "space \\": "pane::SplitRight",
+            "space -": "pane::SplitDown",
+            "space b d": "pane::CloseActiveItem",
+            "space space": "file_finder::Toggle",
+            "space e": "workspace::ToggleLeftDock",
+            "g l": "vim::EndOfLine",
+            "g h": "vim::FirstNonWhitespace",
+            "g n": "vim::SelectNext",
+            "space z": "workspace::ToggleZoom",
+            // "ctrl-h": "workspace::ActivatePreviousPane",
+            // "ctrl-l": "workspace::ActivateNextPane",
+        },
     }
 ]

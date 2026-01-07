@@ -5,8 +5,8 @@
   // =====================================
     "theme": {
         "mode": "dark",
-        "light": "Catppuccin Latte",
-        "dark": "One Light"
+        "light": "Ayu Light",
+        "dark": "Ayu Dark"
     },
     "icon_theme": "Material Icon Theme",
     "title_bar": { "show_menus": false },
