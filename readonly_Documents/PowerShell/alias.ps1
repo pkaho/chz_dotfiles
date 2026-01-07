@@ -34,7 +34,7 @@ function ....  { cd ../../.. }
 # chezmoi
 function ccd  { chezmoi cd }
 function cap  { chezmoi apply -v }
-function cdf  { chezmoi diff }
+function cdf  { chezmoi diff @args }
 function cmg  { chezmoi merge @args }
 function cmga { chezmoi merge-all }
 
