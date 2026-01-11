@@ -2,7 +2,7 @@
     command = "nvim"
 
 [diff]
-    command = "delta"
+    command = "difft"
 
 [merge]
     command = "nvim"
@@ -17,7 +17,10 @@
     {{- if eq .chezmoi.os "windows" }}
     command = "pwsh"
     args = "-nologo"
-    {{- else }}
+    {{- else if (exec "command" "-v" "zsh") }}
     command = "zsh"
+    args = "-l"
+    {{- else }}
+    command = "bash"
     args = "-l"
     {{- end }}
