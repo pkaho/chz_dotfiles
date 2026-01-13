@@ -1,6 +1,19 @@
 local wezterm = require("wezterm")
 
+local schemes = {
+    dark = {
+        "Sea Shells (Gogh)",
+        "MonaLisa",
+        "terafox",
+        "Tomorrow Night Burns",
+        "Tomorrow Night Blue (Gogh)",
+        "Glacier",
+        "Vacuous 2 (terminal.sexy)",
+    }
+}
+
 return function(config)
+    -- config.color_scheme = schemes.dark[5]
     config.font = wezterm.font_with_fallback({
         -- en
         { family = "SF Mono",                      scale = 1.0 },
