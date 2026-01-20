@@ -38,7 +38,7 @@
 {{- $_ := set $config "format_docker" `'[$symbol( $context) ]($style)'` -}}
 {{- $_ := set $config "format_conda" `'[$symbol( $environment) ]($style)'` -}}
 {{- $_ := set $config "format_pixi" `'[$symbol $version ]($style)'` -}}
-{{- $_ := set $config "format_duration" `'[ $duration]($style)'` -}}
+{{- $_ := set $config "format_duration" `'[  $duration]($style)'` -}}
 {{- end -}}
 
 {{- /* ── 主提示符格式 ───────────────────────────────────────────────── */ -}}
@@ -249,7 +249,7 @@ format   = {{ $config.format_pixi }}
 disabled    = {{ $config.disabled_time | toString }}
 time_format = '%R'
 style       = 'fg:color_fg_time bg:color_bg_time'
-format      = '[ $time ]($style)'
+format      = '[ $time]($style)'
 
 [cmd_duration]
 disabled          = false
