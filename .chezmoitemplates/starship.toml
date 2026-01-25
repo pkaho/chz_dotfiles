@@ -122,7 +122,7 @@ Zorin            = ''
 disabled = {{ $config.disabled_os_user | toString }}
 show_always = true
 style_user  = 'bg:color_bg_os fg:color_fg_os'
-style_root  = 'bg:color_bg_os fg:color_bg_os'
+style_root  = 'bg:color_bg_os fg:color_fg_os'
 format      = '[$user ]($style)'
 
 [env_var.__ShellDepthIcon]
