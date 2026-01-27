@@ -16,6 +16,7 @@ return function(config)
     -- config.color_scheme = schemes.dark[5]
     config.font = wezterm.font_with_fallback({
         -- en
+        { family = "RobotoMono Nerd Font",         scale = 1.0 },
         { family = "SF Mono",                      scale = 1.0 },
         { family = "MonoLisa",                     scale = 1.0 },
         { family = "TX-02",                        scale = 1.0 },
