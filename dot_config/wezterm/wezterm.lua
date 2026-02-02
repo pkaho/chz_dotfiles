@@ -10,14 +10,23 @@ config = {
     -- stylua: ignore start
     font = wezterm.font_with_fallback({
         -- en
-        { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 },
-        { family = "Maple Mono NF",                scale = 1.0 },
-        { family = "FiraCode Nerd Font Mono",      scale = 1.0 },
-        { family = "Iosevka Nerd Font Mono",       scale = 1.1 },
+        -- NF 和 NFM 的区别：https://github.com/ryanoasis/nerd-fonts/discussions/945
+        { family = "Annotation Mono",              scale = 1.0 }, -- 手动安装
+        { family = "SF Mono",                      scale = 1.0 }, -- 手动安装
+        { family = "MonoLisa",                     scale = 1.0 }, -- 手动安装
+        { family = "TX-02",                        scale = 1.0 }, -- 手动安装
+        { family = "CodeNewRoman Nerd Font",       scale = 1.1 }, -- scoop install CodeNewRoman-NF-Mono
+        { family = "FiraCode Nerd Font Mono",      scale = 1.0 }, -- scoop install FiraCode-NF-Mono
+        { family = "Iosevka Nerd Font Mono",       scale = 1.1 }, -- scoop install Iosevka-NF-Mono
+        { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 }, -- scoop install JetBrainsMono-NF-Mono
+        { family = "Maple Mono",                   scale = 1.0 }, -- scoop install Maple-Mono
+        { family = "RobotoMono Nerd Font Mono",    scale = 1.0 }, -- scoop install RobotoMono-NF-Mono
+        { family = "SauceCodePro Nerd Font Mono",  scale = 1.0 }, -- scoop install SourceCodePro-NF-Mono
+        { family = "SpaceMono Nerd Font Mono",     scale = 1.0 }, -- scoop install SpaceMono-NF-Mono
         -- cn
-        { family = "LXGW Neo XiHei",               scale = 1.0 },
-        { family = "Maple Mono NF CN",             scale = 1.0 },
-        { family = "LXGW WenKai",                  scale = 1.0 },
+        { family = "LXGW Neo XiHei",               scale = 1.0 }, -- scoop install LXGWNeoXiHei
+        { family = "Maple Mono NF CN",             scale = 1.0 }, -- scoop install LXGWWenKai
+        { family = "LXGW WenKai",                  scale = 1.0 }, -- scoop install Maple-Mono-NF-CN
     }),
     -- stylua: ignore end
     font_size = 12,
