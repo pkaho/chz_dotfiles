@@ -17,9 +17,11 @@ config = {
         { family = "TX-02",                        scale = 1.0 }, -- 手动安装
         { family = "CodeNewRoman Nerd Font",       scale = 1.1 }, -- scoop install CodeNewRoman-NF-Mono
         { family = "FiraCode Nerd Font Mono",      scale = 1.0 }, -- scoop install FiraCode-NF-Mono
+        { family = "IntoneMono Nerd Font Mono",    scale = 1.1 }, -- scoop install IntelOneMono-NF-Mono
         { family = "Iosevka Nerd Font Mono",       scale = 1.1 }, -- scoop install Iosevka-NF-Mono
         { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 }, -- scoop install JetBrainsMono-NF-Mono
         { family = "Maple Mono",                   scale = 1.0 }, -- scoop install Maple-Mono
+        { family = "OverpassM Nerd Font Mono",     scale = 1.1 }, -- scoop install Overpass-NF-Mono
         { family = "RobotoMono Nerd Font Mono",    scale = 1.0 }, -- scoop install RobotoMono-NF-Mono
         { family = "SauceCodePro Nerd Font Mono",  scale = 1.0 }, -- scoop install SourceCodePro-NF-Mono
         { family = "SpaceMono Nerd Font Mono",     scale = 1.0 }, -- scoop install SpaceMono-NF-Mono
