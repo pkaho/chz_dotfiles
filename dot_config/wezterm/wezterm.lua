@@ -23,7 +23,6 @@ config = {
         { family = "Maple Mono",                   scale = 1.0 }, -- scoop install Maple-Mono
         { family = "OverpassM Nerd Font Mono",     scale = 1.1 }, -- scoop install Overpass-NF-Mono
         { family = "RobotoMono Nerd Font Mono",    scale = 1.0 }, -- scoop install RobotoMono-NF-Mono
-        { family = "SauceCodePro Nerd Font Mono",  scale = 1.0 }, -- scoop install SourceCodePro-NF-Mono
         { family = "SpaceMono Nerd Font Mono",     scale = 1.0 }, -- scoop install SpaceMono-NF-Mono
         -- cn
         { family = "LXGW Neo XiHei",               scale = 1.0 }, -- scoop install LXGWNeoXiHei

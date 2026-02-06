@@ -26,7 +26,6 @@ local fontlist = wezterm.font_with_fallback({
     { family = "Maple Mono NF",                scale = 1.0 },
     { family = "OverpassM Nerd Font Mono",     scale = 1.1 },
     { family = "RobotoMono Nerd Font",         scale = 1.0 },
-    { family = "SauceCodePro Nerd Font",       scale = 1.0 },
     { family = "SpaceMono Nerd Font",          scale = 1.0 },
     -- cn
     { family = "LXGW Neo XiHei",               scale = 1.0 },
