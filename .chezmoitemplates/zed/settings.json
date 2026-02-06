@@ -86,8 +86,8 @@
     // =====================================
     // Language & LSP
     // =====================================
-    "auto_signature_help": true,
-    "show_signature_help_after_edits": true,
+    "auto_signature_help": false,
+    "show_signature_help_after_edits": false,
     "diagnostics_max_severity": "all",
     "inlay_hints": { "enabled": false },
     "diagnostics": {
