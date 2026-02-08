@@ -15,7 +15,6 @@ config = {
         { family = "SF Mono",                      scale = 1.0 }, -- 手动安装
         { family = "MonoLisa",                     scale = 1.0 }, -- 手动安装
         { family = "TX-02",                        scale = 1.0 }, -- 手动安装
-        { family = "CodeNewRoman Nerd Font",       scale = 1.1 }, -- scoop install CodeNewRoman-NF-Mono
         { family = "FiraCode Nerd Font Mono",      scale = 1.0 }, -- scoop install FiraCode-NF-Mono
         { family = "IntoneMono Nerd Font Mono",    scale = 1.1 }, -- scoop install IntelOneMono-NF-Mono
         { family = "Iosevka Nerd Font Mono",       scale = 1.1 }, -- scoop install Iosevka-NF-Mono

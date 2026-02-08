@@ -19,7 +19,6 @@ local fontlist = wezterm.font_with_fallback({
     { family = "SF Mono",                      scale = 1.0 },
     { family = "MonoLisa",                     scale = 1.0 },
     { family = "TX-02",                        scale = 1.0 },
-    { family = "CodeNewRoman Nerd Font",       scale = 1.1 },
     { family = "FiraCode Nerd Font Mono",      scale = 1.0 },
     { family = "IntoneMono Nerd Font Mono",    scale = 1.1 },
     { family = "Iosevka Nerd Font Mono",       scale = 1.1 },
