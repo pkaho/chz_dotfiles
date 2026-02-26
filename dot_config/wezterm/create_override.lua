@@ -15,7 +15,6 @@ local schemes = {
 local fontlist = wezterm.font_with_fallback({
     -- en
     { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 },
-    { family = "Annotation Mono",              scale = 1.0 },
     { family = "SF Mono",                      scale = 1.0 },
     { family = "MonoLisa",                     scale = 1.0 },
     { family = "TX-02",                        scale = 1.0 },

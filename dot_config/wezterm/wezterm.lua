@@ -11,7 +11,6 @@ config = {
     font = wezterm.font_with_fallback({
         -- en
         -- NF 和 NFM 的区别：https://github.com/ryanoasis/nerd-fonts/discussions/945
-        { family = "Annotation Mono",              scale = 1.0 }, -- 手动安装
         { family = "SF Mono",                      scale = 1.0 }, -- 手动安装
         { family = "MonoLisa",                     scale = 1.0 }, -- 手动安装
         { family = "TX-02",                        scale = 1.0 }, -- 手动安装
