@@ -9,4 +9,6 @@ AppData/
 {{- if eq .chezmoi.os "windows"}}
 .config/pip
 .config/alacritty
+.config/helix
+.config/zed
 {{- end }}
