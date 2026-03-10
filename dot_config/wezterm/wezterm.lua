@@ -15,11 +15,11 @@ config = {
         { family = "MonoLisa",                     scale = 1.0 }, -- 手动安装
         { family = "TX-02",                        scale = 1.0 }, -- 手动安装
         { family = "FiraCode Nerd Font Mono",      scale = 1.0 }, -- scoop install FiraCode-NF-Mono
-        { family = "IntoneMono Nerd Font Mono",    scale = 1.1 }, -- scoop install IntelOneMono-NF-Mono
+        { family = "IntoneMono Nerd Font Mono",    scale = 1.0 }, -- scoop install IntelOneMono-NF-Mono
         { family = "Iosevka Nerd Font Mono",       scale = 1.1 }, -- scoop install Iosevka-NF-Mono
         { family = "JetBrainsMono Nerd Font Mono", scale = 1.0 }, -- scoop install JetBrainsMono-NF-Mono
         { family = "Maple Mono",                   scale = 1.0 }, -- scoop install Maple-Mono
-        { family = "OverpassM Nerd Font Mono",     scale = 1.1 }, -- scoop install Overpass-NF-Mono
+        { family = "OverpassM Nerd Font Mono",     scale = 1.0 }, -- scoop install Overpass-NF-Mono
         { family = "RobotoMono Nerd Font Mono",    scale = 1.0 }, -- scoop install RobotoMono-NF-Mono
         { family = "SpaceMono Nerd Font Mono",     scale = 1.0 }, -- scoop install SpaceMono-NF-Mono
         -- cn

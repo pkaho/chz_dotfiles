@@ -19,10 +19,10 @@ local fontlist = wezterm.font_with_fallback({
     { family = "MonoLisa",                     scale = 1.0 },
     { family = "TX-02",                        scale = 1.0 },
     { family = "FiraCode Nerd Font Mono",      scale = 1.0 },
-    { family = "IntoneMono Nerd Font Mono",    scale = 1.1 },
+    { family = "IntoneMono Nerd Font Mono",    scale = 1.0 },
     { family = "Iosevka Nerd Font Mono",       scale = 1.1 },
     { family = "Maple Mono NF",                scale = 1.0 },
-    { family = "OverpassM Nerd Font Mono",     scale = 1.1 },
+    { family = "OverpassM Nerd Font Mono",     scale = 1.0 },
     { family = "RobotoMono Nerd Font",         scale = 1.0 },
     { family = "SpaceMono Nerd Font",          scale = 1.0 },
     -- cn
