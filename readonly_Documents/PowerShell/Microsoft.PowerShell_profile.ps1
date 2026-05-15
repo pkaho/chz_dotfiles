@@ -52,3 +52,4 @@ Invoke-Expression (&scoop-search --hook)
 # 导入 Gsudo 模块
 Import-Module "gsudoModule"
 
+$env:LEDGER_FILE = "~/Documents/Finance/hledger.journal"
