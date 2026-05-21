@@ -12,6 +12,10 @@ function imgcat { wezterm imgcat @args }
 function labelme  { uvx labelme @args }                      # uv tool install -w onnxruntime==1.20.1 labelme
 function labelimg { uvx --from labelimg labelImg.exe @args } # uv tool install -w setuptools labelimg
 
+# hledger
+function hladd { hledger add }
+function hlinc { hledger incomestatement @args }
+
 # eza
 Remove-Item alias:ls -Force
 function l    { eza --icons -1 @args }

@@ -52,4 +52,5 @@ Invoke-Expression (&scoop-search --hook)
 # 导入 Gsudo 模块
 Import-Module "gsudoModule"
 
-$env:LEDGER_FILE = "~/Documents/Finance/hledger.journal"
+# 设置当前年月对应的账本文件路径，按月自动拆分记账文件
+$env:LEDGER_FILE = "~/Documents/Finances/$((date).ToString('yyyyMM')).journal"
