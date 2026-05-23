@@ -15,6 +15,7 @@ function labelimg { uvx --from labelimg labelImg.exe @args } # uv tool install -
 # hledger
 function hladd { hledger add }
 function hlinc { hledger incomestatement @args }
+function hlbal { hledger balance @args }
 
 # eza
 Remove-Item alias:ls -Force
