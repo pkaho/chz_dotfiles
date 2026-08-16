@@ -20,16 +20,16 @@ function hlbal { hledger balance @args -f $hledgerFile }
 
 # eza
 Remove-Item alias:ls -Force
-function l    { eza --icons -1 @args }
-function la   { eza --icons -la @args }
-function ld   { eza --icons -D @args }
-function lf   { eza --icons -f @args }
-function ll   { eza --icons -lah @args }
-function ln   { eza --icons '--no-quotes' @args }
-function lr   { eza --icons -lhr @args }
-function ls   { eza --icons @args }
-function lab  { eza --icons --absolute @args }
-function tree { eza --icons -T @args }
+function l    { eza --icons auto -1 @args }
+function la   { eza --icons auto -la @args }
+function ld   { eza --icons auto -D @args }
+function lf   { eza --icons auto -f @args }
+function ll   { eza --icons auto -lah @args }
+function ln   { eza --icons auto '--no-quotes' @args }
+function lr   { eza --icons auto -lhr @args }
+function ls   { eza --icons auto @args }
+function lab  { eza --icons auto --absolute @args }
+function tree { eza --icons auto -T @args }
 
 # change dir
 function cd..  { cd .. }
